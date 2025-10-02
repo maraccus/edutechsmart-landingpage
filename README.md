@@ -21,12 +21,12 @@ _Milestones:_ MVP v1 (2025-10-02), Polish (vecka 2), Launch (månad 1).
 En stor del av vår designfilosofi har sitt ursprung i program som Ableton Live och hemsidor såsom [Plasticity](https://www.plasticity.xyz/): Linjerna är raka och färgpaletten grå och dyster - en kalhet som kontrasteras med starka färgklickar.
 ### Färgschema
 - **Bakgrundsfärger:**
-  - Dark Grey: `#1E1E1E`
-  - Lighter Grey: `#4F4F4F`
+  - ![Static Badge](https://img.shields.io/badge/Dark%20Gray%3A-%20%231E1E1E-%20%231E1E1E)
+  - ![Static Badge](https://img.shields.io/badge/Lighter%20Gray%3A-%20%234F4F4F-%20%234F4F4F)
 - **Textfärg:**
-  - `#EEEEEE`
+  - ![Static Badge](https://img.shields.io/badge/Text%20Color%3A-%20%23EEEEEE-%20%23EEEEEE)
 - **Färgklickar:**
-  - Purple: `#EB4CCE`
-  - Blue: `#6DE6FC`
-  - Turkos: `#8DFCE8`
-  - Yellow: `#FBF05E`
+  - ![Static Badge](https://img.shields.io/badge/Purple%3A-%20%23EB4CCE%20-%20%23EB4CCE)
+  - ![Static Badge](https://img.shields.io/badge/Blue%3A-%20%236DE6FC-%20%236DE6FC)
+  - ![Static Badge](https://img.shields.io/badge/Turcoise%3A-%20%238DFCE8-%20%238DFCE8)
+  - ![Static Badge](https://img.shields.io/badge/Yellow%3A-%20%23FBF05E-%20%23FBF05E)
