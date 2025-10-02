@@ -73,3 +73,20 @@ body {
 #contact button:hover {
     background-color: var(--secondary-color);
 }
+
+@media (max-width: 600px) {
+    #contact {
+        padding: 1rem;
+    }
+
+    #contact form {
+        max-width: 100%;
+    }
+}
+
+/* Centrerar texten i paragrafen och lägger till lite marginal under */
+#contact p {
+    text-align: center;
+    max-width: 400px;
+    margin: 0 auto 1rem; /*la lite undermarginal*/
+}
