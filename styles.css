@@ -8,7 +8,7 @@
 :root {
   --background-color: #1e1e1e; /*Används som djupaste bakgrund*/
   --secondary-bgcolor: #4f4f4f; /*Används som sekundär bakgrund, ovanpå djupaste bakgrund*/
-  --text-color: #eeeeee;
+  --text-color: #ffffff;
   --color-purple: #eb4cce; /*--color-text används som sparsmakade färgklickar, placeras sporadiskt som på Plasticity */
   --color-skyblue: #6de6fc;
   --color-turquoise: #8dfce8;
