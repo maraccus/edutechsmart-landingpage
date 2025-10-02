@@ -7,6 +7,7 @@ Vårt team levererar en landningssida som förkroppsligar EduTechSmarts innovati
 Vår strukturerade process garanterar snabb och effektiv leverans,redo att ta EduTechSmarts digitala lärande till nya höjder.
 ## Backlog & Features
 Det här är vår planerade roadmap. Varje feature är kopplad till en [issue](https://github.com/maraccus/edutechsmart-landingpage/issues) och milestone.
+
 | Feature             | Beskrivning                        | Prioritet | Milestone | Status      |
 | ------------------- | ---------------------------------- | --------- | --------- | ----------- |
 | Hero Sektion        | Välkomst med slogan och CTA-knapp  | Hög       | MVP v1    | To do       |
@@ -19,9 +20,12 @@ Det här är vår planerade roadmap. Varje feature är kopplad till en [issue](h
 | Dark Mode           | Mörk temaapplikation               | Hög       | MVP v1    | To do       |
 | Features-list-thing | Detaljerad lista över funktioner   | Låg       | Polish    | To do       |
 | README.md           | Projektöversikt och plan           | Hög       | MVP v1    | In progress |
+
 _Milestones:_ MVP v1 (2025-10-02), Polish (vecka 2), Launch (månad 1).
+
 ## Design och estetik
 En stor del av vår designfilosofi har sitt ursprung i program som [Ableton Live](https://www.ableton.com/en/live/) och hemsidor såsom [Plasticity](https://www.plasticity.xyz/): Linjerna är raka och färgpaletten grå och dyster - en kalhet som kontrasteras med starka färgklickar.
+
 ### Färgschema
 - **Bakgrundsfärger:**
   - ![Static Badge](https://img.shields.io/badge/Dark%20Gray%3A-%20%231E1E1E-%20%231E1E1E)
@@ -33,3 +37,6 @@ En stor del av vår designfilosofi har sitt ursprung i program som [Ableton Live
   - ![Static Badge](https://img.shields.io/badge/Blue%3A-%20%236DE6FC-%20%236DE6FC)
   - ![Static Badge](https://img.shields.io/badge/Turcoise%3A-%20%238DFCE8-%20%238DFCE8)
   - ![Static Badge](https://img.shields.io/badge/Yellow%3A-%20%23FBF05E-%20%23FBF05E)
+ 
+## Nästa steg
+Vi bygger vidare på denna grund med en strukturerad process – backlog, issues och standups – för att leverera MVP v1 idag. Följ vår framsteg i projektboarden och håll README:n uppdaterad som navet för planering och status. Låt oss forma framtidens vårdutbildning, steg för steg!
