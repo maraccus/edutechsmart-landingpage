@@ -30,3 +30,4 @@ En stor del av vår designfilosofi har sitt ursprung i program som Ableton Live 
   - Blue: `#6DE6FC`
   - Turkos: `#8DFCE8`
   - Yellow: `#FBF05E`
+  - Test: `#0969DA`
