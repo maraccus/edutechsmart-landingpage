@@ -24,6 +24,26 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.menu {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.menu img {
+  width: 300px;
+}
+
+.menu #links a {
+  font-size: 20px;
+  font-weight: 200;
+  padding: 1rem;
+  gap: 2rem;
+  
+}
+
 h1 {
   font-size: 3rem;
   margin-bottom: var(--bottom-margin);
