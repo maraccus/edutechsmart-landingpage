@@ -9,9 +9,10 @@
   --secondary-bgcolor: #b4b4b4;
   --text-color: #000000;
   --color-purple: #eb4cce;
-  --color-skyblue: #6de6fc;
+  --color-skyblue: #6aa2fe;
   --color-turquoise: #8dfce8;
   --color-yellow: #fbf05e;
+  --color-hamburger: #1e1e1e;
 
   --darkmode-button-color: #000000;
   --darkmode-button-text: #ffffff;
@@ -29,10 +30,45 @@
   --darkmode-button-text: #1e1e1e;
 }
 
+/* Nav & Menu */
+.nav-logo img {
+  width: 180px;
+}
+
+/* .menu #links a {
+  font-size: 20px;
+  font-weight: 200;
+  padding: 1rem;
+  gap: 2rem;
+  z-index: 9999;
+} */
+
+nav {
+  padding: 2rem;
+  height: 4rem;
+  background-color: var(--color-skyblue);
+  
+  display: flex; 
+  align-items: center;
+  justify-content: space-between;
+  
+  a {
+    color: #ffffff;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: #eb4cce; */
+  }
+}
+
 #darkmode-toggle {
-  position: fixed;
-  top: 1rem;
-  right: 1rem;
+  /* position: fixed; */
+  /* top: 1rem; */
+  /* right: 1rem; */
   background-color: var(--background-color);
 
   box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.1);
@@ -125,7 +161,7 @@ body {
 .bar3 {
   width: 35px;
   height: 5px;
-  background-color: var(--color-purple);
+  background-color: var(--color-hamburger);
   margin: 6px 0;
   transition: 0.4s;
 }
@@ -169,13 +205,15 @@ nav {
 /* Hero */
 #hero-section {
   position: relative;
-  height: 20rem;
+  height: 100%;
 
   background-image: url("assets/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
+  text-align: center;
+  padding: 3rem;
 
   display: flex;
   justify-content: center;
@@ -201,7 +239,7 @@ nav {
   z-index: 1000;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .links {
     display: none;
     flex-direction: column;
