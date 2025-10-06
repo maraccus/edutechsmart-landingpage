@@ -94,6 +94,50 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.menu {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.menu img {
+  width: 300px;
+}
+
+.menu #links a {
+  font-size: 20px;
+  font-weight: 200;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: var(--color-purple);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
 h1 {
   font-size: 3rem;
   margin-bottom: var(--bottom-margin);
@@ -149,6 +193,25 @@ nav {
   z-index: 1000;
 }
 
+@media (max-width: 768px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    background-color: #222;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 200px;
+    padding: 1rem;
+  }
+   .links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
 /*FOOTER SECTION*/
 /* Flexbox */
 
