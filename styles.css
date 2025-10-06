@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* Samtliga färger hämtade från Ableton Live: Dark Mode*/
 :root {
   --background-color: #1e1e1e; /*Används som djupaste bakgrund*/
   --secondary-bgcolor: #4f4f4f; /*Används som sekundär bakgrund, ovanpå djupaste bakgrund*/
@@ -41,7 +40,7 @@ a {
 /* SECTIONS */
 /* Hero */
 #hero-section {
-    position: relative; /* Viktigt för att pseudo-elementet ska positioneras rätt */
+    position: relative; 
     height: 20rem;
 
     background-image: url("assets/hero.jpg");
