@@ -43,43 +43,20 @@
   z-index: 9999;
 } */
 
-nav {
-  padding: 2rem;
-  height: 4rem;
-  background-color: var(--color-skyblue);
-  
-  display: flex; 
-  align-items: center;
-  justify-content: space-between;
-  
-  a {
-    color: #ffffff;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 2rem;
-    /* background-color: #eb4cce; */
-  }
-}
-
 #darkmode-toggle {
-  /* position: fixed; */
-  /* top: 1rem; */
-  /* right: 1rem; */
+  position: relative; /* så att cirkeln kan röra sig inom knappen */
   background-color: var(--background-color);
-
-  box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.1);
   border: none;
   cursor: pointer;
   z-index: 1000;
-
   width: 3.5rem;
   height: 2rem;
   border-radius: 1rem;
   transition: all 0.3s ease;
+  box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
 }
 
 .darkmode-toggle-circle {
@@ -197,10 +174,6 @@ a {
 }
 
 /* SECTIONS */
-nav {
-  height: 4rem;
-  background-color: var(--color-skyblue);
-}
 
 /* Hero */
 #hero-section {
@@ -344,3 +317,84 @@ nav {
 }
 
 /* Footer section slutar här */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-skyblue);
+  padding: 1rem 2rem;
+  height: 4rem;
+}
+
+.nav-logo img {
+  width: 180px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#darkmode-toggle {
+  position: relative;
+  background-color: var(--background-color);
+  border: none;
+  cursor: pointer;
+  width: 3.5rem;
+  height: 2rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-hamburger);
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 1000px) {
+  .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: var(--secondary-bgcolor);
+    padding: 1rem;
+  }
+
+  .links.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
