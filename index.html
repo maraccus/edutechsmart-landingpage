@@ -8,15 +8,36 @@
 </head>
 
 <body>
-    <section id ="contact">
-        <h2> Kontakta Oss!</h2>
-        <p>Fyll i formuläret nedan Så hör vi av oss så snart som möjligt.</p>
-    <form> 
-    <input type="text" placeholder="Namn" required>  
-    <input type="email" placeholder="E-post" required> 
-    <textarea placeholder="Meddelande" required></textarea>   
-    <button type="submit">Skicka</button>
-</form>
-</section>
+    <section id="contact">
+        <h2>Kontakta Oss!</h2>
+        <p>Fyll i formuläret nedan så hör vi av oss så snart som möjligt.</p>
+
+        <form> 
+            <input type="text" placeholder="Namn" required>  
+            <input type="email" placeholder="E-post" required> 
+            
+            <!-- Textarea + counter in a container -->
+            <div class="textarea-container">
+                <textarea id="message" placeholder="Meddelande" required maxlength="250" rows="4"></textarea>  
+                <span id="char-count">250</span>
+            </div>
+
+            <button type="submit">Skicka</button>
+        </form>
+    </section>
+
+    <!-- Script: lägg bara detta -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const textarea = document.getElementById("message");
+            const charCount = document.getElementById("char-count");
+            const maxLength = textarea.getAttribute("maxlength");
+
+            textarea.addEventListener("input", () => {
+                const remaining = maxLength - textarea.value.length;
+                charCount.textContent = remaining;
+            });
+        });
+    </script>
 </body>
 </html>
