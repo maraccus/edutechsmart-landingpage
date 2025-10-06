@@ -27,7 +27,6 @@
 
   --darkmode-button-color: #ffffff;
   --darkmode-button-text: #1e1e1e;
-  
 }
 
 #darkmode-toggle {
@@ -35,7 +34,7 @@
   top: 1rem;
   right: 1rem;
   background-color: var(--background-color);
-  
+
   box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.1);
   border: none;
   cursor: pointer;
@@ -47,35 +46,33 @@
   transition: all 0.3s ease;
 }
 
-  .darkmode-toggle-circle {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: var(--darkmode-button-color);
-    border-radius: 50%;
-    position: absolute;
-    top: 0.25rem;
-    left: 0.25rem;
-    transition: all 0.3s ease;
-    
+.darkmode-toggle-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--darkmode-button-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  transition: all 0.3s ease;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    & i {
-      color: var(--darkmode-button-text);
-      font-size: 13px;
-    }
-
-    .darkmode-sun {
-      display: block;
-    }
-
-    .darkmode-moon {
-      display: none;
-    }
-
+  & i {
+    color: var(--darkmode-button-text);
+    font-size: 13px;
   }
+
+  .darkmode-sun {
+    display: block;
+  }
+
+  .darkmode-moon {
+    display: none;
+  }
+}
 
 .darkmode-toggle-circle-moved {
   left: 1.75rem;
@@ -87,13 +84,12 @@
   }
 
   .darkmode-sun {
-      display: none;
-    }
+    display: none;
+  }
 
-    .darkmode-moon {
-      display: block;
-    }
-
+  .darkmode-moon {
+    display: block;
+  }
 }
 
 body {
@@ -124,7 +120,9 @@ body {
   z-index: 9999;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: var(--color-purple);
@@ -166,7 +164,6 @@ a {
 nav {
   height: 4rem;
   background-color: var(--color-skyblue);
-
 }
 
 /* Hero */
@@ -180,12 +177,12 @@ nav {
   background-size: cover;
   width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    color: white;
+  color: white;
 }
 
 #hero-section::before {
@@ -215,7 +212,7 @@ nav {
     padding: 1rem;
     z-index: 9999;
   }
-   .links.open {
+  .links.open {
     display: flex;
   }
 
@@ -223,7 +220,56 @@ nav {
     display: block;
   }
 }
-/*FOOTER SECTION*/
+
+/* Text Section, Tomac */
+
+.containerText {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.boxText {
+  height: auto;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.boxText img {
+  max-width: 100%;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.boxText p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.experts {
+  font-size: 35px;
+  font-style: italic;
+  text-align: center;
+}
+
+.expertsMargin {
+  margin: 25px 0;
+}
+
+/* End of text section */
+
+/*FOOTER SECTION Tomac*/
 /* Flexbox */
 
 .container {
