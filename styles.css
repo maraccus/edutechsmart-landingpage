@@ -43,6 +43,7 @@
   height: 2rem;
   border-radius: 1rem;
   transition: all 0.3s ease;
+}
 
   .darkmode-toggle-circle {
     width: 1.5rem;
@@ -52,6 +53,7 @@
     position: absolute;
     top: 0.25rem;
     left: 0.25rem;
+    transition: all 0.3s ease;
     
 
     display: flex;
@@ -63,8 +65,23 @@
       font-size: 13px;
     }
 
-    .darkmode-toggle-circle-moved {
-      left: 1.75rem;
+    :last-child {
+      display: none;
+    }
+  }
+
+.darkmode-toggle-circle-moved {
+  left: 1.75rem;
+  transition: all 0.3s ease;
+
+  i {
+
+    :first-child {
+      display: block;
+    }
+
+    :last-child {
+      display: none;
     }
   }
 }
