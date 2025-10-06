@@ -99,14 +99,14 @@ nav {
 
 /* Hero */
 #hero-section {
-    position: relative; 
-    height: 20rem;
+  position: relative;
+  height: 20rem;
 
-    background-image: url("assets/hero.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
+  background-image: url("assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
 
     display: flex;
     justify-content: center;
@@ -117,7 +117,7 @@ nav {
 }
 
 #hero-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -131,3 +131,41 @@ nav {
   position: relative;
   z-index: 1000;
 }
+
+/*FOOTER SECTION*/
+/* Flexbox */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.box {
+  border: 1px dotted var(--text-color);
+  height: 250px;
+  width: 250px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.textBR {
+  margin-bottom: 20px;
+}
+
+.helhet {
+  margin: 50px 0;
+  font-size: 35px;
+  font-style: italic;
+  text-align: center;
+}
+
+.infoSect {
+  margin: 50px 0 15px 0;
+  padding: 30px;
+  border-top: 1px dotted var(--text-color);
+}
+
+/* Footer section slutar här */
