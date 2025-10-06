@@ -100,6 +100,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
+  z-index: 9998;
 }
 
 .menu img {
@@ -111,6 +112,7 @@ body {
   font-weight: 200;
   padding: 1rem;
   gap: 2rem;
+  z-index: 9999;
 }
 
 .bar1, .bar2, .bar3 {
@@ -201,8 +203,8 @@ nav {
     position: absolute;
     top: 70px;
     right: 0;
-    width: 200px;
     padding: 1rem;
+    z-index: 9999;
   }
    .links.open {
     display: flex;
