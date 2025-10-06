@@ -26,7 +26,6 @@
 
   --darkmode-button-color: #ffffff;
   --darkmode-button-text: #1e1e1e;
-  
 }
 
 #darkmode-toggle {
@@ -45,37 +44,35 @@
   transition: all 0.3s ease;
 }
 
-  .darkmode-toggle-circle {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: var(--background-color);
-    border-radius: 50%;
-    position: absolute;
-    top: 0.25rem;
-    left: 0.25rem;
-    transition: all 0.3s ease;
-    
+.darkmode-toggle-circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--background-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+  transition: all 0.3s ease;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    i {
-      color: var(--text-color);
-      font-size: 13px;
-    }
-
-    :last-child {
-      display: none;
-    }
+  i {
+    color: var(--text-color);
+    font-size: 13px;
   }
+
+  :last-child {
+    display: none;
+  }
+}
 
 .darkmode-toggle-circle-moved {
   left: 1.75rem;
   transition: all 0.3s ease;
 
   i {
-
     :first-child {
       display: block;
     }
@@ -113,7 +110,9 @@ body {
   gap: 2rem;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: var(--color-purple);
@@ -155,7 +154,6 @@ a {
 nav {
   height: 4rem;
   background-color: var(--color-skyblue);
-
 }
 
 /* Hero */
@@ -169,12 +167,12 @@ nav {
   background-size: cover;
   width: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    color: white;
+  color: white;
 }
 
 #hero-section::before {
@@ -204,7 +202,7 @@ nav {
     width: 200px;
     padding: 1rem;
   }
-   .links.open {
+  .links.open {
     display: flex;
   }
 
@@ -212,7 +210,24 @@ nav {
     display: block;
   }
 }
-/*FOOTER SECTION*/
+
+/* Text-sektion av Tomac*/
+
+.containerText {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.boxText {
+  background-color: red;
+}
+
+/* slutet på text-sektion */
+
+/*FOOTER SECTION av Tomac*/
 /* Flexbox */
 
 .container {
