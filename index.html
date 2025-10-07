@@ -13,15 +13,16 @@
         <p>Fyll i formuläret nedan så hör vi av oss så snart som möjligt.</p>
 
         <form> 
-            <input type="text" placeholder="Namn" required>  
-            <input type="email" placeholder="E-post" required> 
+            <input type="text" id="name" placeholder="Namn" required maxlength="40">  
+            <input type="email" id="email" placeholder="E-post" required maxlength="60"> 
             
+
             <!-- Textarea + counter in a container -->
             <div class="textarea-container">
                 <textarea id="message" placeholder="Meddelande" required maxlength="250" rows="4"></textarea>  
                 <span id="char-count">250</span>
             </div>
-
+            
             <button type="submit">Skicka</button>
         </form>
     </section>
@@ -39,5 +40,29 @@
             });
         });
     </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const nameField = document.getElementById("name");
+        const emailField = document.getElementById("email");
+
+        // Max antal ord
+        const maxNameWords = 3;
+        const maxEmailWords = 1;
+
+        // För Namn
+        nameField.addEventListener("input", () => {
+            let words = nameField.value.trim().split(/\s+/);
+            if (words.length > maxNameWords) {
+                nameField.value = words.slice(0, maxNameWords).join(" ");
+            }
+        });
+
+        // För E-post (tillåt bara 1 ord, inga mellanslag)
+        emailField.addEventListener("input", () => {
+            emailField.value = emailField.value.replace(/\s+/g, "");
+        });
+    });
+     </script>
+
 </body>
 </html>

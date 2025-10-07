@@ -6,9 +6,9 @@
 
 :root {
     --primary-color: #62bd90;
-    --secondary-color: #21ec6f;
+    --secondary-color: #62bd90;
     --background-color: #ffffff57;
-    --text-color: #62bd90;
+    --text-color: #050505;
 }
 
 body {
@@ -20,7 +20,7 @@ body {
 #contact {
     padding: 2rem;
     background-color: var(--background-color);
-    color: var(--text-color);
+    color: var(--secondary-color);
 }
 
 #contact h2 {
