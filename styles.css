@@ -244,7 +244,7 @@ a {
 }
 
 .boxText {
-  height: auto;
+  height: 600px;
   width: 350px;
   display: flex;
   flex-direction: column;
@@ -253,7 +253,7 @@ a {
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.4); 
+  background: rgba(255, 255, 255, 0.4);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
@@ -280,6 +280,10 @@ a {
 
 .expertsMargin {
   margin: 25px 0;
+}
+
+.elderly {
+  margin-top: 25px;
 }
 
 /* End of text section */
@@ -375,7 +379,9 @@ nav {
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 30px;
   height: 3px;
   background-color: var(--color-hamburger);
