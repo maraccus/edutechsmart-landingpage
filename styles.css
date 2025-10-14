@@ -9,10 +9,11 @@
   --secondary-bgcolor: #b4b4b4;
   --text-color: #000000;
   --color-purple: #eb4cce;
-  --color-skyblue: #6aa2fe;
+  --color-skyblue: #58b7ff;
   --color-turquoise: #8dfce8;
   --color-yellow: #fbf05e;
-  --color-hamburger: #1e1e1e;
+  --color-hamburger: #000000;
+  --darkmode-background-color: #ffffff;
 
   --darkmode-button-color: #000000;
   --darkmode-button-text: #ffffff;
@@ -21,13 +22,31 @@
   --link-margin: 1.5rem;
 }
 
+.btn:hover {
+  text-shadow: 0 0 50px var(--color-skyblue);
+}
+
+body, nav, a, .boxText, .container, footer, .btn {
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.logo {
+  transition: opacity 0.3s ease;
+}
+
 .dark-mode {
   --background-color: #1e1e1e;
   --secondary-bgcolor: #4f4f4f;
   --text-color: #ffffff;
 
+  --color-hamburger: #ffffff;
+  /*
   --darkmode-button-color: #ffffff;
   --darkmode-button-text: #1e1e1e;
+  */
 }
 
 /* Nav & Menu */
@@ -45,7 +64,7 @@
 
 #darkmode-toggle {
   position: relative; /* så att cirkeln kan röra sig inom knappen */
-  background-color: var(--background-color);
+  background-color: var(--darkmode-background-color);
   border: none;
   cursor: pointer;
   z-index: 1000;
@@ -204,6 +223,7 @@ a {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+
   z-index: 1;
 }
 
@@ -330,7 +350,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--color-skyblue);
+  background-color: var(--background-color);
   padding: 1rem 2rem;
   height: 4rem;
 }
@@ -356,21 +376,6 @@ nav {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-
-#darkmode-toggle {
-  position: relative;
-  background-color: var(--background-color);
-  border: none;
-  cursor: pointer;
-  width: 3.5rem;
-  height: 2rem;
-  border-radius: 1rem;
-  transition: all 0.3s ease;
-  box-shadow: inset 8px 8px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .hamburger {
