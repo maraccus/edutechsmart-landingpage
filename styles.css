@@ -54,14 +54,6 @@ body, nav, a, .boxText, .container, footer, .btn {
   width: 180px;
 }
 
-/* .menu #links a {
-  font-size: 20px;
-  font-weight: 200;
-  padding: 1rem;
-  gap: 2rem;
-  z-index: 9999;
-} */
-
 #darkmode-toggle {
   position: relative; /* så att cirkeln kan röra sig inom knappen */
   background-color: var(--darkmode-background-color);
@@ -175,7 +167,7 @@ body {
 }
 
 .hamburger {
-  display: none;
+  display: block;
   cursor: pointer;
 }
 
@@ -232,27 +224,26 @@ a {
   z-index: 1000;
 }
 
-@media (max-width: 1000px) {
-  .links {
-    display: none;
-    flex-direction: column;
-    background-color: #222;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    padding: 1rem;
-    z-index: 9999;
-  }
-  .links.open {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
+.links {
+  display: none; 
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  background-color: var(--secondary-bgcolor);
+  padding: 1rem;
+  z-index: 9999;
 }
 
-/* Text Section, Tomac */
+.links.open {
+  display: flex; 
+}
+
+.hamburger {
+  display: flex; 
+  flex-direction: column;
+  cursor: pointer;
+}
 
 .containerText {
   display: flex;
@@ -306,11 +297,6 @@ a {
   margin-top: 25px;
 }
 
-/* End of text section */
-
-/*FOOTER SECTION Tomac*/
-/* Flexbox */
-
 .container {
   display: flex;
   justify-content: center;
@@ -359,11 +345,11 @@ nav {
   width: 180px;
 }
 
-.links {
+/* .links {
   display: flex;
   align-items: center;
   gap: 2rem;
-}
+} */
 
 .links a {
   color: white;
@@ -379,7 +365,7 @@ nav {
 }
 
 .hamburger {
-  display: none;
+  display: flex;
   flex-direction: column;
   cursor: pointer;
 }
@@ -392,24 +378,4 @@ nav {
   background-color: var(--color-hamburger);
   margin: 4px 0;
   transition: 0.4s;
-}
-
-@media (max-width: 1000px) {
-  .links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: var(--secondary-bgcolor);
-    padding: 1rem;
-  }
-
-  .links.open {
-    display: flex;
-  }
-
-  .hamburger {
-    display: flex;
-  }
 }
