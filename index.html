@@ -32,34 +32,28 @@
                 <button type="submit">Search</button>
             </div>
             </nav>
-
-
             </header>
 
 
-            
-
-
     <section id="contact">
-        <h2>Kontakta Oss!</h2>
-        <p>Fyll i formuläret nedan så hör vi av oss så snart som möjligt.</p>
+        <h2>Contact Us!</h2>
+        <p>Fill out the form below and we will get back to you as soon as possible.</p>
 
         <form> 
-            <input type="text" id="name" placeholder="Namn" required maxlength="40">  
-            <input type="email" id="email" placeholder="E-post" required maxlength="60"> 
+            <input type="text" id="name" placeholder="Name" required maxlength="40">  
+            <input type="email" id="email" placeholder="E-mail" required maxlength="60"> 
             
 
             <!-- Textarea + counter in a container -->
             <div class="textarea-container">
-                <textarea id="message" placeholder="Meddelande" required maxlength="250" rows="4"></textarea>  
+                <textarea id="message" placeholder="Message" required maxlength="250" rows="4"></textarea>  
                 <span id="char-count">250</span>
             </div>
             
-            <button type="submit">Skicka</button>
+            <button type="submit">Send</button>
         </form>
     </section>
 
-    <!-- Script: lägg bara detta -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const textarea = document.getElementById("message");
@@ -95,6 +89,51 @@
         });
     });
      </script>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <p id="popup-text"></p>
+          <button id="close-popup" class="close-popup">Close</button>
+            <p>Search results will appear here!</p>
+        </div>
+         </div>
+
+
+         <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const searchButton = document.querySelector(".sök-container button");
+            const searchInput = document.querySelector(".sök-container input");
+            const popup = document.getElementById("popup");
+            const popupText = document.getElementById("popup-text");
+            const closePopup = document.getElementById("close-popup");
+
+            searchButton.addEventListener("click", (e) => {
+                e.preventDefault();
+                const query = searchInput.value.trim();
+                if (query) {
+                    popupText.textContent = `You searched for: "${query}"`;
+                    popup.classList.add ("active");
+                }
+            });
+
+            closePopup.addEventListener("click", () => {
+                popup.classList.remove("active");
+            });
+
+            window.addEventListener("click", (e) => {
+                if (e.target === popup) {
+                    popup.classList.remove("active");
+                }
+            });
+          });
+         </script>
+
+
+
+
+      <div class="footer">
+        <p>&copy; 2024 EduTechSmart Global. All rights reserved.</p>
+
 
 </body>
 </html>
